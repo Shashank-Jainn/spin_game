@@ -1,0 +1,140 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link href='layout.css' rel='stylesheet' type='text/css'>
+<!--<link href='mobile.css' rel='stylesheet' type='text/css'>-->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="jquery.cookie.js"></script>
+<script type="text/javascript" src="game.js"></script>
+<!--<script type="text/javascript" src="game.min.js"></script>-->
+
+<title>Color Spin - HTML5 jQuery Game</title> 
+</head>
+
+<body>
+<div id="contact"></div>
+<div id="wrap">
+<div id="title"><h1>Color Spin</h1>
+<span id="pause">Pause</span>
+</div>
+<div id="boardwrap">
+<div id="how-to"><a href="how-to-play.html" target="_blank" title= "How to play">How to play</a></div>
+<div id="turn1" class="allarr"> </div>
+<div id="turn2" class="allarr"></div>
+<div id="turn3" class="allarr"></div>
+<div id="turn4" class="allarr"></div>
+<div id="template"></div>
+<div id="levels">
+<div class="levelselect">Level1</div>
+<div>Level2</div>
+<div>Level3</div>
+<div>Level4</div>
+<div>Level5</div>
+</div>
+<div id="highscore">Highscore</div>
+<div id="info">
+<div id="timer">0:00:00</div>
+<div id="actions">Actions: 0</div>
+<div id="scoring">
+<div id="awrap">
+<h1 id="ahead">Actionscore</h1>
+<div id="spacer"></div>
+<ul>
+<li>1. <span></span></li>
+<li>2. <span></span></li>
+<li>3. <span></span></li>
+<li>4. <span></span></li>
+</ul>
+</div>
+<div id="twrap">
+<h1 id="thead">Timescore</h1>
+<div id="spacer"></div>
+<ul>
+<li>1. <span></span></li>
+<li>2. <span></span></li>
+<li>3. <span></span></li>
+<li>4. <span></span></li>
+</ul>
+</div><!--- score-->
+<div id="levinfo"></div>
+</div>
+
+</div>
+<div id="board">
+
+<div class="row1 col1 q1 q out">
+   <div class="corwrap" id="c1">
+ 		<div class="r-turn"></div>
+ 		<div></div>
+  		<div class="l-turn"></div>
+  		<div></div>
+   </div> 
+</div>
+<div class="row1 col2 q1 out"></div>
+<div class="row1 col3 q2 out"></div>
+<div class="row1 col4 q2 q out">
+<div class="corwrap">
+ 		<div class="l-turn"></div>
+ 		<div class="r-turn"></div>
+  		<div></div>
+  		<div></div>
+  </div>
+</div>
+
+<div class="row2 col1 q1 out"></div>
+<div class="row2 col2 q1"></div>
+<div class="row2 col3 q2"></div>
+<div class="row2 col4 q2 out"></div>
+
+<div class="row3 col1 q3 out"></div>
+<div class="row3 col2 q3"></div>
+<div class="row3 col3 q4"></div>
+<div class="row3 col4 q4 out"></div>
+
+<div class="row4 col1 q3 q out">
+<div class="corwrap">
+<div></div>
+ <div></div>
+ <div class="r-turn"></div>
+ <div  class="l-turn"></div>
+</div>
+
+
+</div>
+<div class="row4 col2 q3 out"></div>
+<div class="row4 col3 q4 out"></div><div class="row4 col4 q4 q">
+<div class="corwrap">
+	<div></div>
+  	<div class="l-turn"> </div >
+  	<div></div>
+ 	<div class="r-turn"></div>
+</div>
+
+</div>
+
+</div>
+<div id="overlay"><div id="aniselect"></div></div>
+</div>
+
+<div id="start">START</div>
+<div id="winmessage"><span id="great">G<span class="letter1">r</span>e<span class="letter2">a</span>t</span> </br> You solved it!</div>
+<div id="go">St<span id="starta">A</span>rt!</div>
+</div>
+<div style="padding-top:25px;" id="copyright"><span><a href="https://github.com/Shashank-Jainn" title="Webdesign" target="_blank">&copy; Shashank Jain | 2022</a></span>
+<div style="font-size: 42px; margin-left: 10px; padding-bottom: 1em; padding-right:30em;">
+	<a href="https://www.linkedin.com/in/shashank-jain-82764b193/" title="Instagram" target="_blank"><i  class="ri-instagram-line icon"></i></a>
+	<i class="ri-twitter-line icon"></i>
+	<i class="ri-github-line icon"></i> 
+	<i class="ri-linkedin-box-line icon"></i>
+</div>
+</div>
+</body>
+</html>
